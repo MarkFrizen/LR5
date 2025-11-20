@@ -1,16 +1,10 @@
 import tkinter as tk
 # Создание основного окна
-root = tk.Tk()
-root.title("Окно с кнопкой «Привет»")
-root.geometry("300x200")
-# Функция, которая вызывается при нажатии кнопки
-def say_hello():
-    label.config(text="Привет!")
+window = tk.Tk()
+window.title("Окно с кнопкой «Привет»")
+window.geometry("500x250")
 # Кнопка
-button = tk.Button(root, text="Нажми меня", command=say_hello)
-button.pack(pady=20)
-# Метка для отображения текста
-label = tk.Label(root, text="", font=("Helvetica", 14))
-label.pack(pady=10)
+button = tk.Button(window, text="Привет")
+button.pack(pady=10)
 # Запуск главного цикла
-root.mainloop()
+window.mainloop()
